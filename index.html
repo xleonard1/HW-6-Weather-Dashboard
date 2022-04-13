@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class = 'contianer'>
+        <div class="row">
+            <!-- column containing the form to search for a city-->
+            <div class="col-3">
+                <!-- form to search for the city-->    
+                <form class="city-form">
+                   <div class="col-md-12">
+                       <h3 for="inputCity" class="form-label">Search for City</h3>
+                       <input type="text" class="form-control" id="inputCity" placeholder = 'Enter City Name'>
+                       <div class="col-12">
+                          <button type="click" class="btn btn-primary col-md-12" id = "searchButton">Submit</button>
+                       </div>
+                    </div>
+                </form>
+                <ul id = 'savedSearches' class = 'saved'></ul>
+            </div>
+
+            <!-- column containing current weather and 5 day forecast-->
+            <div class="col-9">
+
+                <!--section containing current city and weather-->
+                <div class="current-weather row mr-0">
+                    <div class="col-11 border border-dark m-3 rounded">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 id="city-name" class="city-name align-middle"></h2>
+                            </div>
+                        </div>
+                        <div class ="row">
+                            <div class = 'col-12'>
+                                <p id = 'weatherIcon1'></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="temperature"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="humidity"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p id="wind-speed"></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <p id="UV-index"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                    </div>
+                </div>
+                <!--section containing the 5 day forecast-->
+                <div class="row" id = 'fivedayForecast'>
+                    <!-- <div class='col forecast bg-primary text-white ml-3 md-3 rounded' id = 'day1'></div>
+                    <div class='col forecast bg-primary text-white ml-3 md-3 rounded' id = 'day2'> </div> 
+                    <div class='col forecast bg-primary text-white ml-3 md-3 rounded' id = 'day3'> </div> 
+                    <div class='col forecast bg-primary text-white ml-3 md-3 rounded' id = 'day4'> </div> 
+                    <div class='col forecast bg-primary text-white ml-3 md-3 rounded' id = 'day5'> </div>  -->
+                </div>
+               
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="./assets/index.js"></script>
+</body>
+</html>

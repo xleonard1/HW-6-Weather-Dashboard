@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 2rem 0;
+    width: 100%
+}
+
+
